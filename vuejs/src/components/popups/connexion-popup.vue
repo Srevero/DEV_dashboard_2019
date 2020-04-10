@@ -52,7 +52,7 @@
       dialog: {
         type: Boolean,
         required: true,
-        default: false
+        default: true
       }
     }
   }
