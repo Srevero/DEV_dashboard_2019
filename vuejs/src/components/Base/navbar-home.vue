@@ -1,7 +1,6 @@
 <template>
     <div>
         <v-app-bar
-            color="deep-purple"
             height="95px"
         >
             <v-toolbar-title>
@@ -14,25 +13,63 @@
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
+            <div v-if="$vuetify.breakpoint.smAndDown">
+                <v-menu offset-y>
+                <template v-slot:activator="{ on }">
+                    <v-btn
+                    v-on="on"
+                    icon
+                    >
+                        <v-icon>mdi-menu</v-icon>
+                    </v-btn>
+                </template>
+                <v-list class="px-3">
+                    <v-list-item
+                    v-for="(item, index) in navItems"
+                    :key="index"
+                    @click="affiche(index)"
+                    >
+                    <v-list-item-title>{{ item.title }}</v-list-item-title>
+                    </v-list-item>
+                    <v-btn :class="$style.btnInscrire">
+                        S'inscrire
+                    </v-btn>
+                </v-list>
+                </v-menu>
+            </div>
+            <div v-if="$vuetify.breakpoint.mdAndUp">
+                <v-btn text v-for="navItem in navItems" :key="navItem.id">
+                    {{navItem.title}}
+                </v-btn>
 
-            <v-btn text>
-                Explorer
-            </v-btn>
-
-            <v-btn text>
-                Blog
-            </v-btn>
-
-            <v-btn text>
-                Se connecter
-            </v-btn>
-
-            <v-btn :class="$style.btnInscrire">
-                S'inscrire
-            </v-btn>
+                <v-btn :class="$style.btnInscrire">
+                    S'inscrire
+                </v-btn>
+            </div>
         </v-app-bar>
     </div>
 </template>
+<script>
+export default {
+    data () {
+        return {
+        navItems: [
+            { id: 0, title: "Explorer", route: "" },
+            { id: 1, title: "Blog", route: "" },
+            { id: 2, title: "Se connecter", route: "" },
+        ],
+        dialog: false,
+        connexionPopup: ''
+        }
+    },
+    methods: {
+        affiche(index) {
+            console.log(index);
+        }
+    }
+}
+</script>
+
 
 <style lang="scss" module>
     @import "@/style";
