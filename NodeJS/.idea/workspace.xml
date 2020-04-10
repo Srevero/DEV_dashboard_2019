@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b5bd009-c697-4791-aaf8-937be1061d31" name="Default Changelist" comment="">
+    <list default="true" id="2b5bd009-c697-4791-aaf8-937be1061d31" name="Default Changelist" comment="add user controller can now login ans sign in">
+      <change afterPath="$PROJECT_DIR$/controllers/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vuejs/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../vuejs/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +21,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -29,9 +43,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.12.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../JS_Fram/JSF_irc_2019/server" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,10 +60,46 @@
       <updated>1586428318285</updated>
       <workItem from="1586428324172" duration="11000" />
       <workItem from="1586438403117" duration="1448000" />
+      <workItem from="1586505190022" duration="599000" />
+      <workItem from="1586506576505" duration="5906000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add user controller can now login ans sign in" />
+    <option name="LAST_COMMIT_MESSAGE" value="add user controller can now login ans sign in" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="821" y="79" width="779" height="907" key="CommitChangelistDialog2" timestamp="1586512873067">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="821" y="79" width="779" height="907" key="CommitChangelistDialog2/0.0.1920.1044@0.0.1920.1044" timestamp="1586512873067" />
+    <state x="743" y="280" width="424" height="488" key="FileChooserDialogImpl" timestamp="1586509076818">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="743" y="280" width="424" height="488" key="FileChooserDialogImpl/0.0.1920.1044@0.0.1920.1044" timestamp="1586509076818" />
+    <state width="1874" height="272" key="GridCell.Tab.0.bottom" timestamp="1586512873162">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1586512873162" />
+    <state width="1874" height="272" key="GridCell.Tab.0.center" timestamp="1586512873162">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1586512873162" />
+    <state width="1874" height="272" key="GridCell.Tab.0.left" timestamp="1586512873161">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1586512873161" />
+    <state width="1874" height="272" key="GridCell.Tab.0.right" timestamp="1586512873162">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1586512873162" />
+    <state x="459" y="112" width="992" height="734" key="SettingsEditor" timestamp="1586506976744">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="459" y="112" width="992" height="734" key="SettingsEditor/0.0.1920.1044@0.0.1920.1044" timestamp="1586506976744" />
   </component>
 </project>
